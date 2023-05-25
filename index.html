@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="Imagenes/Logo.png" alt="LogoAlura">
+    </header>
+
+    <Main>
+        <section class="seccion1"> 
+            <textarea class="s1-cuadroTexto" id="cuadroEncriptado" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="s1-Condicion">
+                <img class="s1-imagen-condicion" src="Imagenes/alerta.svg">
+                <p class="s1-condicion">Solo letras minúsculas y sin acentos</p> 
+            </div>
+            <div>
+                <input class="boton-encriptar" type="button" value="Encriptar" onclick="botonEncriptar()">
+                <input class="boton-desencriptar" type="button" value="Desencriptar" onclick="botonDesencriptar()">
+            </div>
+        </section>
+
+        <section class="seccion2">
+            <textarea class="s2-cuadroMensaje" id="cuadroRespuesta"></textarea>
+            <div>
+                <img class="s2-imagen-persona" id="persona" src="Imagenes/persona.svg" alt="persona">
+            </div>
+            <div>  
+                <h3 class="s2-estado" id="estado">Ningún mensaje fue encontrado</h3>
+                <p class="s2-instruccion" id="instruccion">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div>
+                <input class="s2-boton-copiar" id="botonCopiar" type="button" value="Copiar" onclick="botonCopiar()">
+            </div>
+            </section>
+    </Main>
+
+    <footer>
+        <p class="copyright">&copy Copyright Lucia Somoza 2023</p>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
